@@ -1,6 +1,7 @@
 Vue.component('preview', {
     template: `
         <div>
+            <br>
             <h4 class="heading">Type something to preview</h4>
             <br>
             Text (max. 40 characters per line)

@@ -9,10 +9,10 @@ function func_wp_insert()
 
 
     wp_enqueue_style('wp_bulma_css_style');
-    // wp_enqueue_style('wp_style_n');
+    wp_enqueue_style('wp_style_n');
 
 
-    echo "<div id='wp_per_app'>"
+    echo "<div id='wp_per_app' class='container wrapper'>"
         .'
           <preview>
 
@@ -23,14 +23,16 @@ function func_wp_insert()
               </div>
 
               <modal v-if="showModal" @close="showModal=false">
-                {{ usertext }}
-                <img src="https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y">
+                <div class="cont">
+                  <div id="utext" class="utext">{{ usertext }}</div>
+
+                  <img src="https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%;">
+                </div>
               </modal>
 
               <button @click="showModal=true">Preview</button>
           </preview>
     '
-    .'<br>'
     .'</div>';
 }
 
