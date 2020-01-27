@@ -46,6 +46,14 @@ new Vue({
         typing() {
             document.getElementById('textfield').value = this.usertext;
         },
+
+        show() {
+            if (this.usertext == "") {
+                alert("Please type something to preview.")
+            } else {
+                this.showModal = true;
+            }
+        }
     },
 
     mounted() {
