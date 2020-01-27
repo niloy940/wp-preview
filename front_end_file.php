@@ -11,6 +11,14 @@ function func_wp_insert()
     wp_enqueue_style('wp_bulma_css_style');
     wp_enqueue_style('wp_style_n');
 
+    global $product;
+    $product_id = $product->get_id();
+
+    if ($product_id == 11) {
+        $image_src = 'https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%; ';
+    } elseif ($product_id == 21) {
+        $image_src = 'https://iflash.at/dev/wp-content/uploads/2019/12/4349-000-P.jpg" style="width:100%;';
+    }
 
     echo "<div id='wp_per_app' class='container wrapper'>"
         .'
@@ -26,7 +34,7 @@ function func_wp_insert()
                 <div class="cont">
                   <div id="utext" class="utext">{{ usertext }}</div>
 
-                  <img src="https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%;">
+                  <img src="'. $image_src .'">
                 </div>
               </modal>
 
