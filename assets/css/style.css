@@ -18,10 +18,86 @@
 
 .utext {
     position: absolute;
-    top: 35px;
-    left: 297px;
+    top: 65px;
+    left: 257px;
     /*background-color: black;*/
     color: white;
 /*    padding-left: 20px;
     padding-right: 20px;
 */}
+
+
+/*
+.modal-card-body {
+    background-color: #ffffff80 !important;
+
+}
+*/
+
+/* Extra small devices (phones, 600px and down) */
+
+
+
+@media only screen and (max-width: 600px) {
+  .utext {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    background-color: black;
+    color: white;
+    font-size: 9px;
+}
+
+}
+
+@media only screen and (max-width: 400px){.utext {
+    position: absolute;
+    top: 38px !important;
+    left: 153px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white;
+    font-size: 11px !important;
+}}
+
+
+/*@media only screen and (max-width: 600px){
+    .utext {
+    position: absolute;
+    top: 48px ;
+    left: 173px;
+    background-color: rgba(0,0,0,0.1) !important;
+    color: white;
+    font-size: 11px !important;
+}
+}*/
+@media only screen and (max-device-height: 736px){
+    .utext {
+    position: absolute;
+    top: 40px !important;
+    left: 155px !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    color: white;
+    font-size: 11px !important;
+}
+
+}
+/*@media only screen and (max-device-height: 812px){
+    .utext {
+    position: absolute;
+        top: 35px !important;
+    left: 140px !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    color: white;
+    font-size: 11px !important;
+}
+
+}*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    .utext {
+    position: absolute;
+        top: 35px !important;
+    left: 140px !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    color: white;
+    font-size: 11px !important;
+    }}

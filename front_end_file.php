@@ -15,11 +15,11 @@ function func_wp_insert()
     $product_id = $product->get_id();
 
     if ($product_id == 11) {
-        $image_src = 'https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%; ';
+        $image_src = 'http://www.fbnayem.com/iflash/wp-content/uploads/2020/01/preview_image_iflash2.jpg" style="width:100%; ';
     } elseif ($product_id == 21) {
-        $image_src = 'https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%; ';
+        $image_src = 'http://www.fbnayem.com/iflash/wp-content/uploads/2020/01/preview_image_iflash2.jpg" style="width:100%; ';
     } else {
-        $image_src = 'https://www.ic-myron.com/cf/HybrisProd/ConfigExpress/PreviewImageCalc/StreamView.cfm?comp=AU&qsn=K12009788&itemno=WF98803A&AreaPhyG=PBF&FontID=MYRONDR&logo=&impline1=.&impline2=&impline3=&AutoCalculateFontSizeForPreview=Y" style="width:100%; ';
+        $image_src = 'http://www.fbnayem.com/iflash/wp-content/uploads/2020/01/preview_image_iflash2.jpg" style="width:100%; ';
     }
 
     echo "<div id='wp_per_app' class='container wrapper'>"
